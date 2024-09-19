@@ -1,0 +1,93 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .nav-button {
+            background-color: #333;
+            color: #fff;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            
+        }
+        .nav-button:hover {
+            background-color: #555;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+        }
+        .contact-form label {
+            margin-bottom: 15px;
+        }
+        .contact-form input, .contact-form textarea {
+            margin-bottom: 25px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-buttons">
+        <a href="contact.html"><button class="nav-button">Contact</button></a>
+        <a href="index.html"><button class="nav-button">Home</button></a>
+        <a href="cars.html"><button class="nav-button">Cars</button></a>
+        <a href="Services.html"><button class="nav-button">Services</button></a>
+        
+    </div>
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="submit.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+</body>
+</html>
+

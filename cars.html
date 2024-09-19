@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Cars</title>
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+     <style>
+         body {
+             font-family: Arial, sans-serif;
+             margin: 0;
+             padding: 0;
+         }
+
+         @media (max-width: 767px) {
+            .nav-buttons {
+              margin: 10px 5px;
+            }
+          }
+          
+          @media (min-width: 768px) and (max-width: 1023px) {
+            .nav-buttons {
+              margin: 10px 10px;
+            }
+          }
+          
+          @media (min-width: 1024px) {
+            .nav-buttons {
+              margin: 10px 20px;
+            }
+          }
+          
+ 
+         .nav-buttons {
+             display: flex;
+             justify-content: center;
+             margin-bottom: 20px;
+         }
+         .nav-button {
+             background-color: #333;
+             color: #fff;
+             padding: 10px 20px;
+             border: none;
+             border-radius: 5px;
+             cursor: pointer;
+             margin: 0 150px;
+         }
+         .nav-button:hover {
+             background-color: #555;
+         }
+
+         .price{
+            color: #f0f0f0;
+            justify-content: space-between;
+            
+         }
+ 
+         .header {
+             background-color: darkcyan;
+             color: #fff;
+             padding: 1em;
+             text-align: center;
+            
+         }
+         .header h1 {
+             margin: 0;
+         }
+         .sliding-text {
+             display: flex;
+             animation: slide 50s infinite;
+         }
+         .sliding-text span {
+             margin: 0 10px;
+             font-size: 24px;
+             font-weight: bold;
+             color: #fff;
+         }
+         @keyframes slide {
+             0% {
+                 transform: translateX(100%);
+             }
+             100% {
+                 transform: translateX(-100%);
+             }
+         }
+         .cars {
+            background-image: linear-gradient(to bottom, #f0f0f0, #fff);
+            padding: 2em;
+            text-align: center;
+            background-image: url(personal2.jpg);
+            background-position-x: center;
+            background-repeat: no-repeat;
+            background-position: 120px;
+            background-attachment: fixed;
+            background-color: #333;
+         }
+         .car {
+             margin: 0px;
+             padding: 2px;
+             border-radius: none;
+             border-color: aqua;
+             justify-content: space-between;
+         }
+         .car h2 {
+             margin-top: 0;
+             color: blue;
+         }
+         .car p {
+             margin-bottom: 20px;
+             color: #ddd;
+         }
+
+
+
+         /* For desktop and laptop screens */
+@media (min-width: 1024px) {
+    .body {
+        max-width: 1200px;
+    }
+}
+
+/* For tablet screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .body {
+        max-width: 900px;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 767px) {
+    .body {
+        padding: 10px;
+    }
+}
+
+ 
+     </style>
+ </head>
+ <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="index.html">Home</a></li>
+                
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="Services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+     
+         <h1>Choose your best and dream car</h1>
+         <div class="sliding-text">
+             <span style="color: green;">WELOME</span>
+             <span style="color: rgb(0, 70, 128);">TO</span>
+             <span style="color: rgb(2, 24, 2);">EUGENE'S</span>
+             <span style="color: rgb(128, 87, 0);">NEW</span>
+             <span style="color: rgb(128, 41, 0);">MODEL</span>
+             <span style="color: rgb(128, 0, 70);">CARS</span>
+         </div>
+     </div>
+     <main>
+     <section class="cars">
+         
+            <nav class="car">
+
+             <img src="download1.jpg" alt="">
+             <span class="price">k780,000</span>
+             <img src="download2.jpg" alt="">
+             <span class="price">k550,000</span>
+             <img src="download3.jpg" alt="">
+             <span class="price">k440,000</span>
+            </nav>
+
+         <nav class="car">
+             <img src="download4.jpg" alt="">
+             <span class="price">k500,000</span>
+             <img src="download5.jpg" alt="">
+             <span class="price">k400,000</span>
+             <img src="download6.jpg" alt="">    
+             <span class="price">14000,000</span>  
+         </nav>
+
+         <nav class="car">
+             <img src="download7.jpg" alt="">
+             <span class="price">k880,000</span>
+             <img src="download8.jpg" alt="">
+             <span class="price">k380,000</span>
+             <img src="download9.jpg" alt="">
+             <span class="price">k970,000</span>
+             
+             
+         </nav>
+        </section>
+    </main>
+ </body>
+</html>

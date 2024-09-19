@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Cars</title>
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+     <style>
+         body {
+             font-family: Arial, sans-serif;
+             margin: 0;
+             padding: 0;
+         }
+
+         @media (max-width: 767px) {
+            .nav-buttons {
+              margin: 10px 5px;
+            }
+          }
+          
+          @media (min-width: 768px) and (max-width: 1023px) {
+            .nav-buttons {
+              margin: 10px 10px;
+            }
+          }
+          
+          @media (min-width: 1024px) {
+            .nav-buttons {
+              margin: 10px 20px;
+            }
+          }
+          
+ 
+         .nav-buttons {
+             display: flex;
+             justify-content: center;
+             margin-bottom: 20px;
+         }
+         .nav-button {
+             background-color: #333;
+             color: #fff;
+             padding: 10px 20px;
+             border: none;
+             border-radius: 5px;
+             cursor: pointer;
+             margin: 0 150px;
+         }
+         .nav-button:hover {
+             background-color: #555;
+         }
+
+         .price{
+            color: #f0f0f0;
+            justify-content: space-between;
+            
+         }
+ 
+         .header {
+             background-color: darkcyan;
+             color: #fff;
+             padding: 1em;
+             text-align: center;
+            
+         }
+         .header h1 {
+             margin: 0;
+         }
+         .sliding-text {
+             display: flex;
+             animation: slide 50s infinite;
+         }
+         .sliding-text span {
+             margin: 0 10px;
+             font-size: 24px;
+             font-weight: bold;
+             color: #fff;
+         }
+         @keyframes slide {
+             0% {
+                 transform: translateX(100%);
+             }
+             100% {
+                 transform: translateX(-100%);
+             }
+         }
+         .cars {
+            background-image: linear-gradient(to bottom, #f0f0f0, #fff);
+            padding: 2em;
+            text-align: center;
+            background-image: url(eugene.jpg);
+            background-position-x: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position-y: center;
+            background-color: rgb(68, 62, 62);
+         }
+         .car {
+             margin: 0px;
+             padding: 2px;
+             border-radius: none;
+             border-color: aqua;
+             justify-content: space-between;
+         }
+         .car h2 {
+             margin-top: 0;
+             color: #00ffff;
+         }
+         .car p  {
+             margin-bottom: 20px;
+             color: hwb(291 93% 5%);
+         }
+
+         #data{
+            color: #ddd;
+            font-size: xx-large;
+         }
+
+
+
+         /* For desktop and laptop screens */
+@media (min-width: 1024px) {
+    .body {
+        max-width: 1200px;
+    }
+}
+
+/* For tablet screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .body {
+        max-width: 900px;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 767px) {
+    .body {
+        padding: 10px;
+    }
+}
+
+ 
+     </style>
+ </head>
+ <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cars.html">Cars</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+     
+         <h1>Choo your best and dream car</h1>
+         <div class="sliding-text">
+             <span style="color: green;">WELOME</span>
+             <span style="color: rgb(0, 70, 128);">TO</span>
+             <span style="color: rgb(2, 24, 2);">EUGENE'S</span>
+             <span style="color: rgb(128, 87, 0);">NEW</span>
+             <span style="color: rgb(128, 41, 0);">MODEL</span>
+             <span style="color: rgb(128, 0, 70);">CARS</span>
+         </div>
+     </div>
+     <main>
+     <section class="cars">
+         
+            <nav class="car">
+                <div class="about-us">           
+                   <p>  
+                        
+                        <h2>Vehicle Details</h2>
+                         <p>
+                             Make: Toyota <br>
+                             Model: Camry  <br>
+                              Year: 2024 <br>
+                             Trim: XLE <br>
+                              Mileage: 35,000 <br><br>
+                        </p>
+                        <h2>Features </h2> <br>
+                        <p>
+                             Engine Type: 2.5L 4-Cylinder <br>
+                            - Transmission: 6-Speed Automatic <br>
+                            - Drive Type: Front-Wheel Drive <br>
+                            - Fuel Type: Gasoline   <br>
+                            - Safety Features: ABS, Airbags, Rearview Camera 
+                        </p>
+                         <br><br>
+                          <h2>Condition</h2>  <br>
+                          <p>
+                            - Exterior: Excellent  <br>
+                            - Interior: Excellent <br>
+                            - Any known issues: None <br><br>
+                           </p>
+                        
+                        
+                         <h2>Service History </h2><br>
+                        <p>
+                            - Last Serviced: February 2022 <br>
+                            - Next Service Due: February 2024  <br>
+                            - Service Type: Oil Change, Tire Rotation  <br>
+                            - Service Provider: Toyota Dealership  
+                        </p><br> <br>
+                        <h2>Maintenance Records</h2>  <br>
+                    <p>
+                            - Oil Changes: Every 5,000 miles  <br>
+                            - Tire Condition: Good <br>
+                            - Brake Pads: Replaced at 20,000 miles <br>
+                            - Battery: Replaced at 25,000 miles  <br> <br>
+                        <h2>Additional Information 
+                        </p>
+                        </h2> <br>
+                    <p>
+                            - Warranty Status: 2 years/50,000 miles remaining  <br>
+                            - Recalls/Safety Notices: None  <br>
+                            - Previous Damage/Accidents: None 
+                        </p> <br> <br>  <br>
+                        
+                        
+                        <h2>Contact Information </h2>  <br>
+                    <p>
+                            - Phone: 077-680-515-5   <br>
+                            - Email: eugenenyirenda@gmail.com  <br>
+                            - Address:  88122 ,Lusaka   <br> <br>
+                        </p>
+                       <h2> Customer Support</h2>  <br>
+                    <p>
+                         Response Time: We respond to all inquiries within 24 hours.  <br>
+                         Support Hours: Our support team is available <br>
+                          Monday - Friday, 9am - 5pm.  <br><br>
+                        <h2> Contact Me: Eugene Nyirenda: </h2><br>
+                    <p>
+                        eugenenyirenda@gmail.com or <br>
+                         077-680-515-5  <br>
+                        </p>
+                        
+                        </p>
+                
+                </div>
+             
+             
+         </nav>
+        </section>
+    </main>
+ </body>
+</html>
