@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,15 +10,49 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: rgb(62, 74, 78);
         }
+
+
+        @media (max-width: 767px) {
+            .nav-button {
+              margin: 10px 5px;
+            }
+          }
+          
+          @media (min-width: 768px) and (max-width: 1023px) {
+            .nav-button  {
+              margin: 10px 10px;
+            }
+
+
+          }
+          
+          @media (min-width: 1024px) {
+            .nav-button {
+              margin: 10px 118px;
+            }
+
+            .foot-button{
+                margin: 10px 120px;
+            }
+
+          }
+  
+          
+
         .nav-buttons {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between;
             margin-bottom: 20px;
-            max-width: 400px;
             margin: 0 auto;
+            margin: 20px;
+            margin-top: 25px;
+
+            
         }
+
         .nav-button {
             background-color: #333;
             color: #fff;
@@ -28,18 +60,20 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+
             
         }
         .nav-button:hover {
-            background-color: #555;
+            background-color: #3e1fe9;
         }
         .container {
             max-width: 800px;
             margin: 40px auto;
             padding: 30px;
             background-color: #f9f9f9;
-            border: 1px solid #ddd;
+            border: none;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
         }
         .contact-form {
             display: flex;
@@ -66,19 +100,76 @@
         .contact-form input[type="submit"]:hover {
             background-color: #3e8e41;
         }
+
+
+
+        .foot{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+            margin: 0 auto;
+            justify-content: space-between;
+            margin: 20px;
+            margin-top: 25px;
+            /*margin-left: 18%;     this can be used to adjust the margin of away from the border of buttons!
+            margin-right: 18%;*/
+            
+        
+        }
+
+
+        .foot-button{
+            background-color: #e7c1c1;
+            color: #fff;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+        .foot-button:hover{
+          color: #3e8e41;
+        }
+
+        /* For desktop and laptop screens */
+@media (min-width: 1024px) {
+    .body {
+        max-width: 1200px;
+    }
+}
+
+/* For tablet screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .body {
+        max-width: 900px;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 767px) {
+    .body {
+        padding: 10px;
+    }
+}
     </style>
+
+
+
 </head>
 <body>
+    
     <div class="nav-buttons">
         <a href="contact.html"><button class="nav-button">Contact</button></a>
         <a href="index.html"><button class="nav-button">Home</button></a>
         <a href="cars.html"><button class="nav-button">Cars</button></a>
-        <a href="Services.html"><button class="nav-button">About</button></a>
+        <a href="Services.html"><button class="nav-button">Services</button></a>
         
     </div>
     <div class="container">
         <h2>Contact Us</h2>
-        <form class="contact-form" action="submit.php" method="post">
+        <form class="contact-form" action="submit.php" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
@@ -88,6 +179,11 @@
             <input type="submit" value="Send Message">
         </form>
     </div>
+
+    <footer class="foot">
+        <a href="watsapp"><button class="foot-button">WatsApp</button></a>
+        <a href="fb"><button class="foot-button">FaceBook</button></a>
+    </footer>
 </body>
 </html>
 
